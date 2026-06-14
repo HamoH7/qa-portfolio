@@ -8,9 +8,13 @@ The API of automationexercise.com - a practice website for QA learning.
 - Does the products list return data
 - Does each product have a name
 - Does the brands list return data
+- Negative quantity in cart (manual)
+- Special characters in search (manual)
 
 ## How I will test
 Using Python with pytest and requests library to send requests to the API and check the responses.
+
+Manual testing of the website UI to find bugs that automated tests cannot catch.
 
 ## When to start testing
 - The website is online
