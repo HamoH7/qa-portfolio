@@ -1,25 +1,46 @@
 # Test Plan — automationexercise.com
 
-## What I am testing
-The API of automationexercise.com - a practice website for QA learning.
+## Introduction
+This test plan covers API and manual testing of automationexercise.com.
+The goal is to verify that the API returns correct data and the website UI works as expected.
 
-## What I will test
-- Does the API respond correctly
-- Does the products list return data
-- Does each product have a name
-- Does the brands list return data
-- Negative quantity in cart (manual)
-- Special characters in search (manual)
+## Scope
 
-## How I will test
-Using Python with pytest and requests library to send requests to the API and check the responses.
+**In scope:**
+- Products API endpoint
+- Brands API endpoint
+- Search API endpoint
+- Manual UI testing of cart functionality
 
-Manual testing of the website UI to find bugs that automated tests cannot catch.
+**Out of scope:**
+- Payment processing
+- User authentication API
+- Mobile version
 
-## When to start testing
-- The website is online
-- Python and pytest are installed
+## Test Approach
+- Automated API testing using Python, pytest and requests library
+- Manual UI testing to find bugs that automated tests cannot catch
 
-## When to stop testing
-- All tests are passing
-- Bug reports are written for any failures
+## Entry Criteria
+- Website is accessible
+- Python 3.14 and pytest are installed
+- All dependencies from requirements.txt are installed
+
+## Exit Criteria
+- All automated tests are passing
+- Manual test cases are executed
+- Bug reports are written for all failures
+
+## Test Environment
+- OS: Windows 11
+- Browser: Chrome
+- Python: 3.14
+- Tools: pytest, requests, pytest-html
+
+## Risks
+- Website may be temporarily unavailable
+
+## Deliverables
+- Automated test suite (tests/test_api.py)
+- Test cases (test_cases/test_cases.csv)
+- Bug reports (bug_reports/)
