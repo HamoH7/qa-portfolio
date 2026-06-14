@@ -13,3 +13,9 @@ class TestProductsAPI:
         response = requests.get(f"{BASE_URL}/productsList")
         data = response.json()
         assert len(data["products"]) > 0
+
+    def test_each_product_has_name(self):
+        response = requests.get(f"{BASE_URL}/productsList")
+        data = response.json()
+        for product in data["products"]:
+            assert "name" in product
