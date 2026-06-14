@@ -2,3 +2,4 @@ ID,Title,Endpoint,Method,Expected Result,Status
 TC-001,Site responds with 200,/productsList,GET,200 OK,Pass
 TC-002,Products list is not empty,/productsList,GET,List contains items,Pass
 TC-003,Each product has a name,/productsList,GET,All products have name field,Pass
+TC-004,Brands list is not empty,/brandsList,GET,List contains at least 1 brand,Pass
