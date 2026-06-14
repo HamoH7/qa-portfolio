@@ -50,3 +50,4 @@ The goal is to verify that the API returns correct data and the website UI works
 - Automated test suite (tests/test_api.py)
 - Test cases (test_cases/test_cases.csv)
 - Bug reports (bug_reports/)
+- Requirements (requirements.txt)
