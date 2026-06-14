@@ -19,3 +19,8 @@ class TestProductsAPI:
         data = response.json()
         for product in data["products"]:
             assert "name" in product
+
+    def test_brands_list_is_not_empty(self):
+        response = requests.get(f"{BASE_URL}/brandsList")
+        data = response.json()
+        assert len(data["brands"]) > 0

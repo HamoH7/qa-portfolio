@@ -7,9 +7,8 @@ The goal is to verify that the API returns correct data and the website UI works
 ## Scope
 
 **In scope:**
-- Products API endpoint
-- Brands API endpoint
-- Search API endpoint
+- Products API — verify the site responds, list is not empty, each product has a name
+- Brands API — verify the list is not empty
 - Manual UI testing of cart functionality
 
 **Out of scope:**
@@ -36,6 +35,13 @@ The goal is to verify that the API returns correct data and the website UI works
 - Browser: Chrome
 - Python: 3.14
 - Tools: pytest, requests, pytest-html
+
+## Test Cases
+
+- TC-001: Products API responds with status 200
+- TC-002: Products list is not empty
+- TC-003: Each product has a name field
+- TC-004: Brands list is not empty
 
 ## Risks
 - Website may be temporarily unavailable
